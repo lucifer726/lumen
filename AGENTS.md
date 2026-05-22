@@ -14,13 +14,13 @@ There is no build step and no dependency install step for the app itself.
 ./start.sh
 ```
 
-Open `http://127.0.0.1:5173/`.
+Open `http://127.0.0.1:4173/`.
 
 Useful checks:
 
 ```bash
 node --check codex-bridge.mjs
-python3 -m http.server 5173 --bind 127.0.0.1
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
 Stop servers before finishing unless the user asked to keep them running.

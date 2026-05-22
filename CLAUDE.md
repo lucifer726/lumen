@@ -9,7 +9,7 @@ No build step. One command spins up both the static server and the Codex bridge:
 ```bash
 ./start.sh
 # bridge:  http://127.0.0.1:8787
-# web:     http://127.0.0.1:5173
+# web:     http://127.0.0.1:4173
 ```
 
 Ctrl-C tears down both. Override ports via `LUMEN_WEB_PORT`, `LUMEN_CODEX_PORT`, hosts via `LUMEN_WEB_HOST`, `LUMEN_CODEX_HOST`. Other bridge env vars (see `codex-bridge.mjs`): `LUMEN_CODEX_BIN` (default `codex`), `LUMEN_CODEX_CWD`, `LUMEN_CODEX_MODEL`, `LUMEN_CODEX_PROFILE`, `LUMEN_CODEX_TIMEOUT_MS`.

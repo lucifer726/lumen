@@ -7,7 +7,7 @@
   "scripts": {
     "start": "./start.sh",
     "bridge": "node codex-bridge.mjs",
-    "serve": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
     "check": "node --check codex-bridge.mjs"
   }
 }

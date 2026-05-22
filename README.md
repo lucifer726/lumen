@@ -28,7 +28,7 @@ Lumen 是一个本地运行的数学可视化工具：用户用中文描述一�
 然后打开：
 
 ```text
-http://127.0.0.1:5173/
+http://127.0.0.1:4173/
 ```
 
 也可以使用 npm 脚本：
@@ -41,7 +41,7 @@ npm start
 
 | 服务 | 地址 | 说明 |
 | --- | --- | --- |
-| Web | `http://127.0.0.1:5173` | 静态前端 |
+| Web | `http://127.0.0.1:4173` | 静态前端 |
 | Bridge | `http://127.0.0.1:8787` | 本地 Codex API adapter |
 
 按 `Ctrl-C` 会同时关闭两个进程。
@@ -51,7 +51,7 @@ npm start
 | 变量 | 默认值 | 说明 |
 | --- | --- | --- |
 | `LUMEN_WEB_HOST` | `127.0.0.1` | 静态服务器监听地址 |
-| `LUMEN_WEB_PORT` | `5173` | 静态服务器端口 |
+| `LUMEN_WEB_PORT` | `4173` | 静态服务器端口 |
 | `LUMEN_CODEX_HOST` | `127.0.0.1` | bridge 监听地址 |
 | `LUMEN_CODEX_PORT` | `8787` | bridge 端口 |
 | `LUMEN_CODEX_BIN` | `codex` | Codex CLI 可执行文件 |
