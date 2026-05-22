@@ -1,0 +1,224 @@
+/* ============================================
+   Beem Design System — Colors & Typography
+   ============================================ */
+
+:root {
+  /* ======================
+     BASE COLOR PALETTE
+     ====================== */
+
+  /* Brand Colors — derived from Beem logo */
+  --brand-cyan-light: #77EDEF;  /* Light cyan accent (logo top-right) */
+  --brand-cyan:       #29C5F6;  /* Cyan (logo top-left) */
+  --brand-blue:       #24A0F2;  /* Mid blue (logo bottom-left) */
+  --brand-blue-deep:  #1260CC;  /* Deep blue (logo bottom-right) */
+
+  /* Primary Blue scale (built from --brand-blue #24A0F2 / --brand-blue-deep #1260CC) */
+  --blue-50:  #E8F4FE;
+  --blue-100: #C5E3FC;
+  --blue-200: #8CC8F8;
+  --blue-300: #52ADF5;
+  --blue-400: #24A0F2;  /* Brand mid */
+  --blue-500: #1282E0;  /* Primary interactive */
+  --blue-600: #1260CC;  /* Brand deep — hover/pressed */
+  --blue-700: #0E4EA8;
+  --blue-800: #0A3C84;
+  --blue-900: #072A60;
+
+  /* Cyan scale (accent, from logo) */
+  --cyan-50:  #E6FCFD;
+  --cyan-100: #BEF6F8;
+  --cyan-300: #77EDEF;  /* Logo light cyan */
+  --cyan-500: #29C5F6;  /* Logo cyan */
+  --cyan-700: #0F93BF;
+
+  /* Neutral / Gray */
+  --gray-0:   #FFFFFF;
+  --gray-50:  #F5F6F7;
+  --gray-100: #ECEDF0;
+  --gray-200: #DEE0E3;
+  --gray-300: #C4C7CC;
+  --gray-400: #A6AAB0;
+  --gray-500: #8F959E;
+  --gray-600: #646A73;
+  --gray-700: #4E5459;
+  --gray-800: #2E3238;
+  --gray-900: #1F2329;
+
+  /* Green (Success) */
+  --green-50:  #E8F8EE;
+  --green-100: #C2EDCF;
+  --green-500: #34C759;
+  --green-600: #2BAE4E;
+  --green-700: #1F9440;
+
+  /* Red (Danger) */
+  --red-50:  #FEF0EF;
+  --red-100: #FDD8D5;
+  --red-500: #F54A45;
+  --red-600: #D4352E;
+  --red-700: #B3201A;
+
+  /* Orange (Warning) */
+  --orange-50:  #FFF5EB;
+  --orange-100: #FFE5CC;
+  --orange-500: #FF8800;
+  --orange-600: #DB7400;
+  --orange-700: #B76100;
+
+  /* Purple (Accent) */
+  --purple-50:  #F2EEFA;
+  --purple-100: #DFD4F4;
+  --purple-500: #7B61FF;
+  --purple-600: #6A52DB;
+  --purple-700: #5943B7;
+
+  /* ======================
+     SEMANTIC COLORS
+     ====================== */
+
+  /* Foreground / Text */
+  --fg-primary:    var(--gray-900);   /* #1F2329 — body text, headings */
+  --fg-secondary:  var(--gray-600);   /* #646A73 — captions, labels */
+  --fg-tertiary:   var(--gray-500);   /* #8F959E — placeholders, disabled */
+  --fg-inverse:    var(--gray-0);     /* white on dark bg */
+  --fg-brand:      var(--blue-500);   /* #1282E0 — links, active */
+
+  /* Background */
+  --bg-body:       var(--gray-0);     /* #FFFFFF */
+  --bg-surface:    var(--gray-0);     /* cards, panels */
+  --bg-muted:      var(--gray-50);    /* #F5F6F7 — subtle backgrounds */
+  --bg-hover:      var(--gray-100);   /* #ECEDF0 */
+  --bg-active:     var(--blue-50);    /* #EBF5FF — selected items */
+  --bg-brand:      var(--blue-500);   /* #1282E0 */
+  --bg-sidebar:    var(--gray-900);   /* #1F2329 — dark sidebar */
+
+  /* Border */
+  --border-default:  var(--gray-200); /* #DEE0E3 */
+  --border-hover:    var(--gray-300); /* #C4C7CC */
+  --border-focus:    var(--blue-500); /* #1282E0 */
+
+  /* Status */
+  --status-success:  var(--green-500);
+  --status-danger:   var(--red-500);
+  --status-warning:  var(--orange-500);
+  --status-info:     var(--blue-500);
+
+  /* ======================
+     TYPOGRAPHY
+     ====================== */
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, 'Segoe UI Historic', 'Traditional Arabic', 'Simplified Arabic', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Font Sizes */
+  --text-xs:   12px;
+  --text-sm:   13px;
+  --text-base: 14px;
+  --text-md:   16px;
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  28px;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semi:    600;
+  --weight-bold:    700;
+
+  /* Line Heights */
+  --leading-tight:  1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* Semantic Type */
+  --h1-size: var(--text-3xl);
+  --h1-weight: var(--weight-bold);
+  --h2-size: var(--text-2xl);
+  --h2-weight: var(--weight-semi);
+  --h3-size: var(--text-xl);
+  --h3-weight: var(--weight-semi);
+  --h4-size: var(--text-lg);
+  --h4-weight: var(--weight-medium);
+  --body-size: var(--text-base);
+  --body-weight: var(--weight-regular);
+  --caption-size: var(--text-xs);
+  --caption-weight: var(--weight-regular);
+
+  /* ======================
+     SPACING
+     ====================== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ======================
+     RADII
+     ====================== */
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-full: 9999px;
+
+  /* ======================
+     SHADOWS
+     ====================== */
+  --shadow-sm:  0 1px 2px rgba(31,35,41,0.06);
+  --shadow-md:  0 4px 12px rgba(31,35,41,0.08);
+  --shadow-lg:  0 8px 24px rgba(31,35,41,0.12);
+  --shadow-xl:  0 16px 48px rgba(31,35,41,0.16);
+
+  /* ======================
+     TRANSITIONS
+     ====================== */
+  --ease-default: cubic-bezier(0.2, 0, 0, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+}
+
+/* === RESET + BASE === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--leading-normal);
+  color: var(--fg-primary);
+  background: var(--bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 { font-size: var(--h1-size); font-weight: var(--h1-weight); line-height: var(--leading-tight); }
+h2 { font-size: var(--h2-size); font-weight: var(--h2-weight); line-height: var(--leading-tight); }
+h3 { font-size: var(--h3-size); font-weight: var(--h3-weight); line-height: var(--leading-tight); }
+h4 { font-size: var(--h4-size); font-weight: var(--h4-weight); line-height: var(--leading-tight); }
+p  { font-size: var(--body-size); line-height: var(--leading-normal); }
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+}
+
+a {
+  color: var(--fg-brand);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "lumen",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first Chinese math visualization app powered by Canvas and Codex.",
+  "type": "module",
+  "scripts": {
+    "start": "./start.sh",
+    "bridge": "node codex-bridge.mjs",
+    "serve": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "check": "node --check codex-bridge.mjs"
+  }
+}
